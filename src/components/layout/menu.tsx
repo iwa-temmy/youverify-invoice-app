@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
 import Icon from "@/components/icon";
 
-export function Menu() {
+export function Menu({ handleMenuClose }: { handleMenuClose?: () => void }) {
   const pathname = useLocation();
   const menuList = getMenuList(pathname?.pathname);
 
@@ -19,7 +19,7 @@ export function Menu() {
                 className="w-full justify-start h-14 mb-1"
                 asChild
               >
-                <Link to={item.href}>
+                <Link to={item.href} onClick={handleMenuClose}>
                   <span className="mr-4">
                     <Icon icon={item.icon} height={24} width={24} />
                   </span>

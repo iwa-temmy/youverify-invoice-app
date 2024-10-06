@@ -21,12 +21,12 @@ const InvoiceActionCard = ({
   return (
     <Card
       className={cn(
-        " text-white h-[13.56rem]",
+        " text-white h-[12rem] md:h-[13.56rem]",
         backgroundColor ? backgroundColor : ""
       )}
     >
-      <CardContent className="py-6 px-8">
-        <img src={imagePath} className="w-[5.62rem] h-[5.62rem]" alt="money" />
+      <CardContent className="py-6 px-4 md:px-8">
+        <img src={imagePath} className="w-[4.62rem] h-[4.62rem] md:w-[5.62rem] md:h-[5.62rem]" alt="money" />
         <h2
           className={cn(
             "mb-1 text-xl font-medium pt-4",

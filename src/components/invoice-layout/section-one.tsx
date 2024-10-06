@@ -3,9 +3,9 @@ import { Card, CardContent } from "../ui/card";
 
 const SectionOne = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-10">
-      <Card className="h-[180px]">
-        <CardContent className="py-8 px-10 flex flex-col gap-2.5">
+    <section className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8 mt-10">
+      <Card className="h-fit md:h-[180px]">
+        <CardContent className="py-4 md:py-8 px-4 md:px-10 flex flex-col gap-2.5">
           <img src="/category.svg" alt="category" className="w-10 h-10" />
           <div className="flex gap-2 items-center">
             <p className="uppercase text-xs font-normal text-grey">
@@ -15,13 +15,13 @@ const SectionOne = () => {
               1,289
             </p>
           </div>
-          <p className="text-[1.623rem] tracking-wide font-medium">
+          <p className="text-xl md:text-[1.623rem] tracking-wide font-medium">
             {currencySymbol}4,120,102.<span className="text-sm">76</span>
           </p>
         </CardContent>
       </Card>
-      <Card className="h-[180px]">
-        <CardContent className="py-8 px-10 flex flex-col gap-2.5">
+      <Card className="h-fit md:h-[180px]">
+        <CardContent className="py-4 md:py-8  px-4 md:px-10 flex flex-col gap-2.5">
           <img src="/category.svg" alt="category" className="w-10 h-10" />
           <div className="flex gap-2 items-center">
             <p className="uppercase text-xs font-normal text-grey">
@@ -31,13 +31,13 @@ const SectionOne = () => {
               13
             </p>
           </div>
-          <p className="text-[1.623rem] tracking-wide font-medium">
+          <p className="text-xl md:text-[1.623rem] tracking-wide font-medium">
             {currencySymbol}4,120,102.<span className="text-sm">76</span>
           </p>
         </CardContent>
       </Card>
-      <Card className="h-[180px]">
-        <CardContent className="py-8 px-10 flex flex-col gap-2.5">
+      <Card className="h-fit md:h-[180px]">
+        <CardContent className="py-4 md:py-8  px-4 md:px-10 flex flex-col gap-2.5">
           <img src="/category.svg" alt="category" className="w-10 h-10" />
           <div className="flex gap-2 items-center">
             <p className="uppercase text-xs font-normal text-grey">
@@ -47,13 +47,13 @@ const SectionOne = () => {
               08
             </p>
           </div>
-          <p className="text-[1.623rem] tracking-wide font-medium">
+          <p className="text-xl md:text-[1.623rem] tracking-wide font-medium">
             {currencySymbol}4,120,102.<span className="text-sm">76</span>
           </p>
         </CardContent>
       </Card>
-      <Card className="h-[180px]">
-        <CardContent className="py-8 px-10 flex flex-col gap-2.5">
+      <Card className="h-fit md:h-[180px]">
+        <CardContent className="py-4 md:py-8 px-4 md:px-10 flex flex-col gap-2.5">
           <img src="/category.svg" alt="category" className="w-10 h-10" />
           <div className="flex gap-2 items-center">
             <p className="uppercase text-xs font-normal text-grey">
@@ -63,7 +63,7 @@ const SectionOne = () => {
               06
             </p>
           </div>
-          <p className="text-[1.623rem] tracking-wide font-medium">
+          <p className="text-xl md:text-[1.623rem] tracking-wide font-medium">
             {currencySymbol}4,120,102.<span className="text-sm">76</span>
           </p>
         </CardContent>

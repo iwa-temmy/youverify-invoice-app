@@ -10,6 +10,7 @@ import {
   OverviewIcon,
   SettingsIcon,
   UsersIcon,
+  MenuIcon,
 } from "@/components/icon/svg-icons";
 
 const Icon = (props: Dictionary) => {
@@ -29,6 +30,7 @@ const Icon = (props: Dictionary) => {
     lucide: {
       eye: <EyeIcon {...props} />,
       eyeOff: <EyeOffIcon {...props} />,
+      menu: <MenuIcon {...props} />,
     },
   };
 

@@ -11,6 +11,7 @@ import {
 } from "../ui/dropdown-menu";
 import { DropdownMenuItem } from "@radix-ui/react-dropdown-menu";
 import { Avatar, AvatarFallback } from "../ui/avatar";
+import Helmet from "react-helmet";
 
 const TopNav = () => {
   const location = useLocation();
@@ -23,6 +24,10 @@ const TopNav = () => {
 
   return (
     <header className="w-full mx-auto border-b border-lightBlue md:w-[95%]">
+      <Helmet>
+        <title>{location?.pathname?.replace("/", "")} - Invoice App</title>
+        <meta name="description" content="Invoice App" />
+      </Helmet>
       <div className="flex px-4 md:px-4 h-20 items-center">
         <div className="flex items-center space-x-2 lg:space-x-0">
           <MobileNav />
