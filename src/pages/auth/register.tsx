@@ -37,7 +37,7 @@ const Register = () => {
         const user = userCredential.user;
         if (Object.keys(user)?.includes("accessToken")) {
           toast.success(
-            "User registered successfully, kindly proceed to login"
+            "User registered successfully, you will be redirect to the login page"
           );
           setTimeout(() => {
             navigate("/auth/login");
