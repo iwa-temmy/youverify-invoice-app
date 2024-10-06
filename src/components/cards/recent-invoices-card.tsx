@@ -28,9 +28,8 @@ const RecentInvoicesCard = () => {
     {}
   );
 
-  console.log("groupedInvoices", groupedInvoices);
   return (
-    <Card className="w-full md:w-full lg:w-[62%] md:px-4 py-2">
+    <Card className="w-full md:w-full xl:w-[62%] md:px-4 py-2">
       <CardHeader className="flex flex-row justify-between items-center">
         <h3 className="text-xl font-medium text-neutralBlack">
           Recent Invoices

@@ -3,7 +3,7 @@ import { Card, CardContent } from "../ui/card";
 
 const SectionOne = () => {
   return (
-    <section className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mt-10">
+    <section className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8 mt-10">
       <Card className="h-fit md:h-[180px]">
         <CardContent className="py-4 md:py-8 px-4 md:px-10 flex flex-col gap-2.5">
           <img src="/category.svg" alt="category" className="w-10 h-10" />

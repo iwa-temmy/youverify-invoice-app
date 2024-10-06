@@ -4,7 +4,7 @@ const SectionTwo = () => {
   return (
     <section className="mt-8">
       <h3 className="text-lg font-medium text-neutralBlack mb-4">Invoice Actions</h3>
-      <main className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <main className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 gap-6">
         <InvoiceActionCard
           imagePath="./money.svg"
           title="Create New Invoice"
