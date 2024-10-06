@@ -1,4 +1,5 @@
 import SectionOne from "@/components/invoice-layout/section-one";
+import SectionThree from "@/components/invoice-layout/section-three";
 import SectionTwo from "@/components/invoice-layout/section-two";
 import { Button } from "@/components/ui/button";
 
@@ -27,6 +28,7 @@ const Invoice = () => {
       </header>
       <SectionOne />
       <SectionTwo />
+      <SectionThree />
     </section>
   );
 };

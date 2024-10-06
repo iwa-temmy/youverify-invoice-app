@@ -7,7 +7,7 @@ const ComingSoon = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        height: "90vh",
+        height: "84vh",
         width: "100%",
       }}
       className="bg-white"

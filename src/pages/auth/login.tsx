@@ -12,8 +12,12 @@ import { firebaseApp } from "@/lib/firebase";
 import { Dictionary } from "@/types/dictionary";
 import { formatErrors } from "@/lib/utils";
 import { signinSchema } from "@/lib/schema/authSchema";
+import { useNavigate } from "react-router-dom";
 const Login = () => {
   const [loading, setLoading] = useState(false);
+
+  const navigate = useNavigate();
+
   const { handleSubmit, values, handleChange, errors } = useFormik({
     initialValues: {
       email: "",
@@ -30,12 +34,10 @@ const Login = () => {
           values?.password
         );
         setLoading(false);
-
-        // Signed up
         const user: Dictionary = userCredential.user;
         sessionStorage.setItem("token", user?.accessToken);
         sessionStorage.setItem("user", JSON.stringify(user));
-        // You can handle additional logic here (e.g., saving user to a database)
+        navigate("/getting-started");
       } catch (error) {
         setLoading(false);
         const errorObject: Dictionary = JSON.parse(JSON.stringify(error));

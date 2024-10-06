@@ -23,7 +23,7 @@ const TopNav = () => {
 
   return (
     <header className="w-full mx-auto border-b border-lightBlue md:w-[95%]">
-      <div className="flex px-4 md:px-6 h-20 items-center">
+      <div className="flex px-4 md:px-4 h-20 items-center">
         <div className="flex items-center space-x-2 lg:space-x-0">
           <MobileNav />
           <h1 className="font-medium text-xs md:text-xl uppercase text-darkGrey tracking-[.05rem] md:tracking-[.15rem]">

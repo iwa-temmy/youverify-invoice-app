@@ -16,7 +16,7 @@ const PrivateRoutes = () => {
       <Sidebar />
       <section className="w-screen md:w-[calc(100vw-288px)] bg-[#F5F6FA] h-full">
         <TopNav />
-        <section className="px-4 md:px-6 py-8 h-full overflow-auto ">
+        <section className="px-4 md:px-12 pt-8 py-8 h-[calc(100vh-80px)] overflow-auto">
           <Outlet />
         </section>
       </section>
