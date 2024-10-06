@@ -37,6 +37,7 @@ const Login = () => {
         const user: Dictionary = userCredential.user;
         sessionStorage.setItem("token", user?.accessToken);
         sessionStorage.setItem("user", JSON.stringify(user));
+        toast.success("Sign in successful");
         navigate("/getting-started");
       } catch (error) {
         setLoading(false);
