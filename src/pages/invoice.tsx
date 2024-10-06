@@ -1,9 +1,32 @@
+import { useEffect, useState } from "react";
+import loadingAnimation from "@/assets/lotties/loading.json";
 import SectionOne from "@/components/invoice-layout/section-one";
 import SectionThree from "@/components/invoice-layout/section-three";
 import SectionTwo from "@/components/invoice-layout/section-two";
+import PreviewInvoiceModal from "@/components/modals/preview-invoice-modal";
 import { Button } from "@/components/ui/button";
+import LottieAnimation from "@/components/ui/lottie-animation";
 
 const Invoice = () => {
+  const [loading, setLoading] = useState(false);
+  const [previewModalOpen, setPreviewModalOpen] = useState(false);
+
+  const openPreviewModal = () => {
+    setPreviewModalOpen(true);
+  };
+
+  const closePreviewModal = () => {
+    setPreviewModalOpen(false);
+  };
+
+  useEffect(() => {
+    setLoading(true);
+    new Promise(() => {
+      setTimeout(() => {
+        setLoading(false);
+      }, 3000);
+    });
+  }, []);
   return (
     <section>
       <header className="flex items-center justify-between">
@@ -26,9 +49,22 @@ const Invoice = () => {
           </Button>
         </div>
       </header>
-      <SectionOne />
-      <SectionTwo />
-      <SectionThree />
+      {loading ? (
+        <div className="h-[calc(100vh-200px)] flex justify-center items-center">
+          <LottieAnimation animationData={loadingAnimation} height={280} />
+        </div>
+      ) : (
+        <>
+          <SectionOne />
+          <SectionTwo />
+          <SectionThree openPreviewModal={openPreviewModal} />
+        </>
+      )}
+
+      <PreviewInvoiceModal
+        open={previewModalOpen}
+        handleClose={closePreviewModal}
+      />
     </section>
   );
 };
