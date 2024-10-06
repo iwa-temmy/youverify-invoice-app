@@ -22,7 +22,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#technologies">Technolofies Used</a></li>
+        <li><a href="#technologies">Technologies Used</a></li>
         <li><a href="#project-structure">Project Structure</a></li>
         <li><a href="#conventions-followed">Conventions Followed</a></li>
       </ul>
@@ -47,11 +47,11 @@
 
 ### Technologies
 
-- Framework: React (vite)
-- UI: Shadcn annd Tailwindcss
+- Framework: React + TypeScript (vite)
+- UI: Shadcn and Tailwindcss
 - Routing: React Router v6
 - Styling: CSS
-- Icon pack: Customized Icons from Svgs
+- Icon pack: Customized Icons
 - Toasts: Sonner
 - Formatting: ESLint
 - Backend as service for Authentication: Firebase
