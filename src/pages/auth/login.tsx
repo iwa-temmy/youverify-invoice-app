@@ -12,7 +12,7 @@ import { firebaseApp } from "@/lib/firebase";
 import { Dictionary } from "@/types/dictionary";
 import { formatErrors } from "@/lib/utils";
 import { signinSchema } from "@/lib/schema/authSchema";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const Login = () => {
   const [loading, setLoading] = useState(false);
 
@@ -84,6 +84,9 @@ const Login = () => {
         >
           Sign in
         </Button>
+        <p className="text-base font-medium">
+          Don't have an account? <Link to="/auth/register">Sign up</Link>
+        </p>
       </form>
     </AuthLayout>
   );
