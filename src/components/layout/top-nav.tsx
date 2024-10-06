@@ -41,26 +41,21 @@ const TopNav = () => {
           </Button>
           <DropdownMenu>
             <DropdownMenuTrigger>
-              <Button
-                variant="outline"
-                className="relative h-12 w-[82px] flex gap-2 rounded-full"
-              >
+              <div className="relative border border-[#E3E6EF] bg-white shadow-sm flex justify-center items-center h-12 w-[82px] gap-2 rounded-full">
                 <Avatar className="h-8 bg-blue text-white w-8 font-bold text-sm -ml-3">
                   <AvatarFallback className="bg-transparent">KO</AvatarFallback>
                 </Avatar>
                 <Icon icon="random:arrowDropdown" />
-              </Button>
+              </div>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               <DropdownMenuSeparator />
-              <DropdownMenuItem>
-                <Button
-                  className="w-full bg-transparent hover:bg-blue hover:text-white text-black"
-                  onClick={handleSignOut}
-                >
-                  Sign out
-                </Button>
+              <DropdownMenuItem
+                className="w-full bg-transparent text-sm p-3 rounded-m hover:bg-blue hover:text-white text-black"
+                onClick={handleSignOut}
+              >
+                Sign out
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

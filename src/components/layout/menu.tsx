@@ -1,12 +1,18 @@
 import { cn } from "@/lib/utils";
 import { getMenuList } from "@/lib/menu-list";
 import { Button } from "@/components/ui/button";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Icon from "@/components/icon";
 
 export function Menu({ handleMenuClose }: { handleMenuClose?: () => void }) {
   const pathname = useLocation();
+  const navigate = useNavigate();
   const menuList = getMenuList(pathname?.pathname);
+
+  const handleNavigate = (path: string) => {
+    navigate(path);
+    handleMenuClose?.();
+  };
 
   return (
     <div className="[&>div>div[style]]:!block">
@@ -17,16 +23,14 @@ export function Menu({ handleMenuClose }: { handleMenuClose?: () => void }) {
               <Button
                 variant={item.active ? "link" : "ghost"}
                 className="w-full justify-start h-14 mb-1"
-                asChild
+                onClick={() => handleNavigate(item.href)}
               >
-                <Link to={item.href} onClick={handleMenuClose}>
-                  <span className="mr-4">
-                    <Icon icon={item.icon} height={24} width={24} />
-                  </span>
-                  <p className="max-w-[200px] text-grey font-light text-sm tracking-[.05rem]">
-                    {item.label}
-                  </p>
-                </Link>
+                <span className="mr-4">
+                  <Icon icon={item.icon} height={24} width={24} />
+                </span>
+                <p className="max-w-[200px] text-grey font-light text-sm tracking-[.05rem]">
+                  {item.label}
+                </p>
               </Button>
             </li>
           ))}

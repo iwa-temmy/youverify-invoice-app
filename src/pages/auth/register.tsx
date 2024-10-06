@@ -11,10 +11,11 @@ import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import { firebaseApp } from "@/lib/firebase";
 import { Dictionary } from "@/types/dictionary";
 import { formatErrors } from "@/lib/utils";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { signupSchema } from "@/lib/schema/authSchema";
 const Register = () => {
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
   const { handleSubmit, values, handleChange, errors } = useFormik({
     initialValues: {
       email: "",
@@ -34,7 +35,14 @@ const Register = () => {
 
         // Signed up
         const user = userCredential.user;
-        console.log("user", user);
+        if (Object.keys(user)?.includes("accessToken")) {
+          toast.success(
+            "User registered successfully, kindly proceed to login"
+          );
+          setTimeout(() => {
+            navigate("/auth/login");
+          }, 3000);
+        }
         // You can handle additional logic here (e.g., saving user to a database)
       } catch (error) {
         setLoading(false);

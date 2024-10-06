@@ -11,10 +11,6 @@ import ComingSoon from "./pages/coming-soon";
 import Register from "./pages/auth/register";
 
 function App() {
-  const token: string = sessionStorage.getItem("token") || "";
-
-  console.log("token", token);
-
   return (
     <>
       <Router>
