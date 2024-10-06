@@ -133,8 +133,8 @@ export const InvoiceIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 export const UsersIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
-    width="1em"
-    height="1em"
+    width="24"
+    height="24"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -175,8 +175,8 @@ export const UsersIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 export const SettingsIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
-    width="1em"
-    height="1em"
+    width="24"
+    height="24"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -202,8 +202,8 @@ export const SettingsIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 export const HelpIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
-    width="1em"
-    height="1em"
+    width="24"
+    height="24"
     viewBox="0 0 24 24"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
@@ -233,5 +233,94 @@ export const HelpIcon = (props: React.SVGProps<SVGSVGElement>) => (
       stroke-linecap="round"
       stroke-linejoin="round"
     />
+  </svg>
+);
+
+export const NotificationIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    width="1em"
+    height="1em"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      opacity="0.4"
+      d="M12 6.43994V9.76994"
+      stroke="#373B47"
+      stroke-width="1.5"
+      stroke-miterlimit="10"
+      stroke-linecap="round"
+    />
+    <path
+      d="M12.02 2C8.34002 2 5.36002 4.98 5.36002 8.66V10.76C5.36002 11.44 5.08002 12.46 4.73002 13.04L3.46002 15.16C2.68002 16.47 3.22002 17.93 4.66002 18.41C9.44002 20 14.61 20 19.39 18.41C20.74 17.96 21.32 16.38 20.59 15.16L19.32 13.04C18.97 12.46 18.69 11.43 18.69 10.76V8.66C18.68 5 15.68 2 12.02 2Z"
+      stroke="#373B47"
+      stroke-width="1.5"
+      stroke-miterlimit="10"
+      stroke-linecap="round"
+    />
+    <path
+      opacity="0.4"
+      d="M15.33 18.8199C15.33 20.6499 13.83 22.1499 12 22.1499C11.09 22.1499 10.25 21.7699 9.65004 21.1699C9.05004 20.5699 8.67004 19.7299 8.67004 18.8199"
+      stroke="#373B47"
+      stroke-width="1.5"
+      stroke-miterlimit="10"
+    />
+  </svg>
+);
+
+export const ArrowDownIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    width="9"
+    height="6"
+    viewBox="0 0 9 6"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M4.8077 5.3075L8.3377 1.7775C8.6277 1.4775 8.6277 1.0075 8.3377 0.7175C8.0477 0.4275 7.5677 0.4275 7.2777 0.7175L4.2777 3.7175L1.2777 0.7175C0.987701 0.4275 0.507701 0.4275 0.217701 0.7175C0.0782212 0.858638 0 1.04907 0 1.2475C0 1.44593 0.0782212 1.63636 0.217701 1.7775L3.7477 5.3075C3.8977 5.4575 4.0877 5.5275 4.2777 5.5275C4.4677 5.5275 4.6577 5.4575 4.8077 5.3075Z"
+      fill="#697598"
+    />
+  </svg>
+);
+
+export const EyeIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+    // class="lucide lucide-eye"
+  >
+    <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
+    <circle cx="12" cy="12" r="3" />
+  </svg>
+);
+
+export const EyeOffIcon = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    {...props}
+  >
+    <path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49" />
+    <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" />
+    <path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143" />
+    <path d="m2 2 20 20" />
   </svg>
 );

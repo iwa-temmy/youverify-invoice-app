@@ -1,8 +1,12 @@
 import { Dictionary } from "@/types/dictionary";
 import {
+  ArrowDownIcon,
+  EyeOffIcon,
+  EyeIcon,
   HelpIcon,
   HomeIcon,
   InvoiceIcon,
+  NotificationIcon,
   OverviewIcon,
   SettingsIcon,
   UsersIcon,
@@ -17,6 +21,14 @@ const Icon = (props: Dictionary) => {
       users: <UsersIcon />,
       settings: <SettingsIcon />,
       help: <HelpIcon />,
+      notification: <NotificationIcon {...props} />,
+    },
+    random: {
+      arrowDropdown: <ArrowDownIcon {...props} />,
+    },
+    lucide: {
+      eye: <EyeIcon {...props} />,
+      eyeOff: <EyeOffIcon {...props} />,
     },
   };
 

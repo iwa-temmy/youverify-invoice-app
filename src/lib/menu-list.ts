@@ -34,7 +34,7 @@ export function getMenuList(pathname: string): Menu[] {
     {
       href: "/beneficiary-management",
       label: "Beneficiary Management",
-      active: pathname.includes("/invoice"),
+      active: pathname.includes("/beneficiary-management"),
       icon: "menu:users",
     },
     {

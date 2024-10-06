@@ -1,5 +1,5 @@
 // import Link from "next/link";
-import { MenuIcon, PanelsTopLeft } from "lucide-react";
+import { MenuIcon } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -8,7 +8,6 @@ import {
   SheetContent,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Link } from "react-router-dom";
 import { Menu } from "./menu";
 
 export const MobileNav = () => {
@@ -21,16 +20,7 @@ export const MobileNav = () => {
       </SheetTrigger>
       <SheetContent className="sm:w-72 px-3 h-full flex flex-col" side="left">
         <SheetHeader>
-          <Button
-            className="flex justify-center items-center pb-2 pt-1"
-            variant="link"
-            asChild
-          >
-            <Link to="/dashboard" className="flex items-center gap-2">
-              <PanelsTopLeft className="w-6 h-6 mr-1" />
-              <h1 className="font-bold text-lg">Brand</h1>
-            </Link>
-          </Button>
+          <img src="./logo.svg" alt="logo" className="px-4 h-6 mb-4 -mt-1" />
         </SheetHeader>
         <Menu />
       </SheetContent>
