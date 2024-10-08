@@ -45,16 +45,16 @@ const RecentInvoicesCard = ({
             View all invoices
           </Button>
         </CardHeader>
-        <CardContent className="flex flex-col gap-8 mt-2.5">
+        <CardContent className="flex flex-col gap-4 mt-2.5">
           {Object.entries(groupedInvoices).map(([date, invoices], index) => (
             <div key={index}>
               <h4 className="my-4 text-xs text-neutralBlack font-medium uppercase">{`${
                 date === "2022-11-27" ? "Today" : ""
               } ${format(new Date(date), "do MMMM, yyyy")}`}</h4>
-              <div className="flex flex-col gap-10 pl-2 md:pl-5 md:pr-4 text-sm">
+              <div className="flex flex-col gap-6 pl-2 md:pl-5 md:pr-4 text-sm">
                 {invoices.map((invoice: Dictionary, idx: number) => (
                   <div
-                    className="flex flex-row justify-between items-center"
+                    className="flex flex-row justify-between items-center hover:bg-lightGrey/20 p-2 cursor-pointer"
                     key={idx}
                     onClick={openPreviewModal}
                   >

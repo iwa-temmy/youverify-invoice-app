@@ -43,7 +43,7 @@ const Invoice = () => {
           </Button>
           <Button
             size="lg"
-            className="uppercase bg-blue px-10 w-[100px] md:w-[210px] text-xs md:text-sm  rounded-[40px]"
+            className="uppercase bg-blue px-10 w-[100px] md:w-[210px] text-xs md:text-sm rounded-[40px]"
           >
             Create
           </Button>

@@ -11,6 +11,8 @@ const StatusTag = ({ status }: { status: string }) => {
         return "text-darkGrey bg-[#F6F8FA] border-[#373B4733]";
       case "pending payment":
         return "text-orange border-[#D98F0033] bg-[#FFF8EB]";
+      case "partial payment":
+        return "text-blue border-[#003EFF33] bg-[#F2FBFF]";
       default:
         return "bg-gray-100 text-gray-500";
     }

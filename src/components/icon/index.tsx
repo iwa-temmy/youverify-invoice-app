@@ -12,6 +12,7 @@ import {
   UsersIcon,
   MenuIcon,
   CancelIcon,
+  CheckIcon,
 } from "@/components/icon/svg-icons";
 
 const Icon = (props: Dictionary) => {
@@ -33,6 +34,7 @@ const Icon = (props: Dictionary) => {
       eyeOff: <EyeOffIcon {...props} />,
       menu: <MenuIcon {...props} />,
       cancel: <CancelIcon {...props} />,
+      check: <CheckIcon {...props} />,
     },
   };
 

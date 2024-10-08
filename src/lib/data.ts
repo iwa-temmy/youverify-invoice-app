@@ -75,3 +75,4 @@ export const invoices = [
     status: "paid",
   },
 ];
+
