@@ -80,7 +80,7 @@ const PreviewInvoiceModal = ({
               </div>
             </DialogHeader>
             <StatusTag status="partial payment" />
-            <div className="h-[calc(75vh-120px)] overflow-hidden overflow-y-auto">
+            <div className="h-[calc(75vh-120px)] lg:h-[calc(79vh-120px)] overflow-hidden overflow-y-auto">
               <ReminderSection />
               <section className="flex flex-col lg:flex-row mt-6 gap-8">
                 <main className="w-full lg:w-[60%] border border-[#E3E6EF] p-4 lg:p-6 rounded-[40px]">
