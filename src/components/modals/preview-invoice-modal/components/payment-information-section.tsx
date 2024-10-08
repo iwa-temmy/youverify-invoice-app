@@ -4,9 +4,9 @@ import { currencySymbol } from "@/lib/constants";
 
 const PaymentInformationSection = () => {
   return (
-    <section className="border border-[#E3E6EF] p-8 rounded-3xl mt-6">
+    <section className="border border-[#E3E6EF] p-4 lg:p-8 rounded-3xl mt-6">
       <SectionTitle title="payment informations" />
-      <div className="grid grid-cols-4 gap-4 mt-2">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-2">
         <InvoiceDetailsItem
           name="account name"
           value="iwaloye olawale samuel"

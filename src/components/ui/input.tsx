@@ -42,7 +42,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             </button>
           )}
         </div>
-        {error ? <small className="text-red-500">{error}</small> : null}
+        {error ? <small className="text-red">{error}</small> : null}
       </div>
     );
   }

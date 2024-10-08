@@ -20,3 +20,26 @@ export const formatErrors = (error: string) => {
       );
   }
 };
+
+export const formatAmount = (
+  num: string | undefined,
+  showDecimals: boolean = true
+): string => {
+  if (num === null || num === undefined) {
+    throw new Error("num cannot be null or undefined");
+  }
+
+  try {
+    const initial = parseFloat(num);
+    if (isNaN(initial)) {
+      throw new Error("num is not a number");
+    }
+    return initial.toLocaleString("en-US", {
+      minimumFractionDigits: showDecimals ? 2 : 0,
+      maximumFractionDigits: showDecimals ? 2 : 0,
+    });
+  } catch (error) {
+    console.error("Error formatting amount:", error);
+    return "NaN";
+  }
+};

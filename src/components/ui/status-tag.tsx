@@ -20,7 +20,7 @@ const StatusTag = ({ status }: { status: string }) => {
   return (
     <div
       className={cn(
-        "border-[0.75px] rounded-3xl w-fit text-[10px] uppercase px-4 h-[1.68rem] font-medium flex justify-center items-center",
+        "border-[0.75px] rounded-3xl w-fit text-[10px] uppercase px-4 !h-[1.68rem] font-medium flex justify-center items-center",
         getStatusColor(status) ? getStatusColor(status) : ""
       )}
     >

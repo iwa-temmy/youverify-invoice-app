@@ -3,7 +3,7 @@ import loadingAnimation from "@/assets/lotties/loading.json";
 import SectionOne from "@/components/invoice-layout/section-one";
 import SectionThree from "@/components/invoice-layout/section-three";
 import SectionTwo from "@/components/invoice-layout/section-two";
-import PreviewInvoiceModal from "@/components/modals/preview-invoice-modal";
+import PreviewInvoiceModal from "@/components/modals/preview-invoice-modal/preview-invoice-modal";
 import { Button } from "@/components/ui/button";
 import LottieAnimation from "@/components/ui/lottie-animation";
 
