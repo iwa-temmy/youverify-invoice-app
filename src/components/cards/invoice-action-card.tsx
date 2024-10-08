@@ -41,7 +41,7 @@ const InvoiceActionCard = ({
             descriptionColor ? descriptionColor : ""
           )}
         >
-          {description}y
+          {description}
         </p>
       </CardContent>
     </Card>

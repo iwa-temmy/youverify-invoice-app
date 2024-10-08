@@ -16,7 +16,7 @@ const RecentActivitiesCard = () => {
           View all
         </Button>
       </CardHeader>
-      <CardContent className="flex flex-col gap-6 mt-2">
+      <CardContent className="flex flex-col p-2 lg:p-6 gap-6 mt-2">
         {invoiceActivities?.map((item, index) => (
           <div className="flex items-start gap-6" key={index}>
             <img

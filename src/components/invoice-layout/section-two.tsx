@@ -13,15 +13,15 @@ const SectionTwo = () => {
         />
         <InvoiceActionCard
           imagePath="./setting.svg"
-          title="Change Invoice setting"
-          description="Create new invoices easily"
+          title="Change Invoice settings"
+          description="Customize your invoices"
           titleColor="text-darkGrey"
           descriptionColor="text-grey"
         />
         <InvoiceActionCard
           imagePath="./profile-user.svg"
-          title="Change Invoice setting"
-          description="Create new invoices easily"
+          title="Manage Customer list"
+          description="Add and remove customers"
           titleColor="text-darkGrey"
           descriptionColor="text-grey"
         />

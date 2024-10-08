@@ -7,26 +7,31 @@ import {
 } from "@/components/ui/table";
 import { currencySymbol } from "@/lib/constants";
 import { invoiceItems } from "@/lib/data";
+import useIsMobile from "@/lib/hooks/useIsMobile";
 import { cn, formatAmount } from "@/lib/utils";
 
 const TableFooterRow = ({
   title,
   value,
   size = "small",
+  className = "",
 }: {
   title: string;
   value: string;
   size: "small" | "large";
+  className?: string;
 }) => {
   return (
-    <TableRow>
-      <TableCell className="text-right"></TableCell>
-      <TableCell colSpan={3}>
+    <TableRow className={className}>
+      <TableCell className="text-right hidden lg:table-cell"></TableCell>
+      <TableCell colSpan={useIsMobile() ? 4 : 3}>
         <div className="flex justify-between">
           <h2
             className={cn(
               "uppercase ",
-              size === "large" ? "text-lg text-darkGrey font-medium" : "text-sm font-normal text-grey2"
+              size === "large"
+                ? "text-lg text-darkGrey font-medium"
+                : "text-sm font-normal text-grey2"
             )}
           >
             {title}
@@ -46,7 +51,6 @@ const TableFooterRow = ({
 };
 
 const ItemsTable = () => {
-
   return (
     <Table>
       <TableBody>
