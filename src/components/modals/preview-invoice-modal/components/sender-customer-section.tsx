@@ -4,9 +4,9 @@ import { currencySymbol } from "@/lib/constants";
 
 const SendCustomerSection = () => {
   return (
-    <section className="bg-fuschia60 p-8 rounded-[40px]">
-      <article className="flex justify-between">
-        <div className="w-[70%]">
+    <section className="bg-fuschia60 p-6 lg:p-8 rounded-[40px]">
+      <article className="flex flex-col gap-4 md:gap-0 lg:flex-row justify-between">
+        <div className="w-full lg:w-[70%]">
           <SectionTitle title="sender" />
           <article className="flex gap-4 mt-2.5">
             <aside className="bg-white h-[60px] w-[60px] flex rounded-2xl justify-center items-center">
@@ -22,7 +22,7 @@ const SendCustomerSection = () => {
             </main>
           </article>
         </div>
-        <div className="w-[30%]">
+        <div className="w-full lg:w-[30%]">
           <SectionTitle title="customer" />
           <main className="flex flex-col gap-1.5 text-xs text-grey mt-2.5">
             <h2 className="text-base text-neutralBlack font-medium">
@@ -35,7 +35,7 @@ const SendCustomerSection = () => {
       </article>
       <article className="mt-6">
         <SectionTitle title="invoice details" />
-        <section className="grid grid-cols-4 mt-2">
+        <section className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-0 mt-2">
           <InvoiceDetailsItem name="invoice no" value="83777737377" />
           <InvoiceDetailsItem name="issue date" value="83777737377" />
           <InvoiceDetailsItem name="due date" value="83777737377" />

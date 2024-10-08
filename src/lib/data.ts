@@ -85,6 +85,8 @@ export const invoicePreviewActivities: Dictionary[] = [
     invoiceId: "00239434",
     time: "Today, 12:20 PM",
     title: "You",
+    user: "Olaniyi Ojo Adewale",
+    action: "Created invoice",
     action_details: "00239434/Olaniyi Ojo Adewale",
     user_avatar: "/user-avatar.png",
   },
@@ -93,9 +95,13 @@ export const invoicePreviewActivities: Dictionary[] = [
     invoiceId: "00239434",
     time: "Today, 12:20 PM",
     title: "You",
-    user: "Olaniyi Ojo Adewale",
+    action: "Created invoice",
+    confirmation: true,
+    from: "00239434/Olaniyi Ojo Adewale",
+    to: "Olaniyi Ojo Adewale",
     user_avatar: "/user-avatar.png",
   },
+ 
   {
     id: 3,
     invoiceId: "00239434",
@@ -104,7 +110,7 @@ export const invoicePreviewActivities: Dictionary[] = [
     user: "Olaniyi Ojo Adewale",
     user_avatar: "/user-avatar.png",
     action: "You manually confirmed a partial payment of",
-    action_details: `${currencySymbol} $503,000.00`,
+    action_details: `${currencySymbol}503,000.00`,
   },
   {
     id: 4,
@@ -114,7 +120,7 @@ export const invoicePreviewActivities: Dictionary[] = [
     user: "Olaniyi Ojo Adewale",
     user_avatar: "/user-avatar.png",
     action: "You manually confirmed a partial payment of",
-    action_details: `${currencySymbol} $6,000,000.00`,
+    action_details: `${currencySymbol}6,000,000.00`,
   },
   {
     id: 5,
@@ -123,8 +129,10 @@ export const invoicePreviewActivities: Dictionary[] = [
     time: "Today, 12:20 PM",
     user: "Olaniyi Ojo Adewale",
     user_avatar: "/user-avatar.png",
-    action: "You manually confirmed a partial payment of",
-    action_details: `${currencySymbol} $6,000,000.00`,
+    action: "Sent invoice",
+    confirmation: true,
+    from: "00239434/Olaniyi Ojo Adewale",
+    to: "Olaniyi Ojo Adewale",
   },
 ];
 
