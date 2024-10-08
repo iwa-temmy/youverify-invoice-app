@@ -1,4 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 import PrivateRoutes from "@/routes/private-routes";
 
 //toast
@@ -9,6 +13,7 @@ import Login from "@/pages/auth/login";
 import Invoice from "@/pages/invoice";
 import ComingSoon from "./pages/coming-soon";
 import Register from "./pages/auth/register";
+import ErrorPage from "./pages/error";
 
 function App() {
   return (
@@ -26,6 +31,7 @@ function App() {
             <Route path="/beneficiary-management" element={<ComingSoon />} />
             <Route path="/help-center" element={<ComingSoon />} />
             <Route path="/settings" element={<ComingSoon />} />
+            <Route path="*" element={<ErrorPage />} />
           </Route>
         </Routes>
       </Router>
