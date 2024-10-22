@@ -88,7 +88,7 @@
 
 - All Folders are lowercases
 - There should be only one level of folder in each component folder (i.e. `/components/{component}/{subcomponent}` should be the deepest tree level in the component folder).
-- Functions use camelCases while components use PascalCases for naming comvention, file names should be lowercase (words should be separated by hyphens).
+- Functions use camelCases while components use kebab-case for naming comvention, file names should be lowercase (words should be separated by hyphens).
 - `...`
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
